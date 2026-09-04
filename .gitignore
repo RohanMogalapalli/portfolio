@@ -1,0 +1,41 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+.cache/
+*.min.*
+*.map
+
+# Node (only if added later)
+node_modules/
+
+.agents/
+
+# Skill data — large local CSVs, not source
+.agents/skills/ui-ux-pro-max/data/
+
+# Temp
+*.tmp
+
+skills-lock.json

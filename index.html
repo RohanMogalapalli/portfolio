@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mogalapalli Rohan — Computer Science undergraduate at VIT building intelligent systems and full-stack applications.">
+    <meta name="theme-color" content="#fafafa">
+    <title>Mogalapalli Rohan — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a href="#about" class="nav__logo" aria-label="Rohan — home">Rohan</a>
+            <ul class="nav__links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="about" class="hero">
+            <div class="container">
+                <p class="hero__eyebrow">Hello, I'm</p>
+                <h1 class="hero__title">Mogalapalli Rohan</h1>
+                <p class="hero__subtitle">Computer Science undergraduate at VIT, building intelligent systems and full-stack applications.</p>
+                <ul class="hero__meta" aria-label="Contact details">
+                    <li><a href="tel:+919392795372">+91 9392795372</a></li>
+                    <li aria-hidden="true" class="dot">·</li>
+                    <li><a href="mailto:rohan.m0810@gmail.com">rohan.m0810@gmail.com</a></li>
+                    <li aria-hidden="true" class="dot">·</li>
+                    <li><a href="https://github.com/RohanMogalapalli" target="_blank" rel="noopener noreferrer">github.com/RohanMogalapalli</a></li>
+                </ul>
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">View Projects</a>
+                    <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section__title">Education</h2>
+                <div class="card">
+                    <div class="card__head">
+                        <h3 class="card__title">Vellore Institute of Technology</h3>
+                        <span class="card__meta">2024 – 2028 · Vellore, India</span>
+                    </div>
+                    <p class="card__sub">Bachelor of Technology in Computer Science and Engineering</p>
+                    <p class="card__highlight">CGPA: 9.41 / 10</p>
+                    <p class="card__detail"><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Software Engineering, Artificial Intelligence, Machine Learning, Computer Organization & Architecture.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Languages</h3>
+                        <p>Python, Java, C, C++, JavaScript, SQL</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Frontend</h3>
+                        <p>React.js, HTML5, CSS3</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Backend</h3>
+                        <p>Node.js, Express.js</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Databases</h3>
+                        <p>MongoDB, MySQL, SQLite</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">AI / ML</h3>
+                        <p>LangChain, Ollama, Faster-Whisper, RAG, LLMs, Prompt Engineering</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Tools</h3>
+                        <p>Git, GitHub, VS Code, Linux</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section__title">Projects</h2>
+                <div class="projects-grid">
+                    <article class="project">
+                        <div class="project__head">
+                            <h3 class="project__title">CloudVaultX</h3>
+                            <span class="badge badge--ongoing">Ongoing · 2026</span>
+                        </div>
+                        <p class="project__desc">Decentralized cloud storage platform that distributes encrypted files across multiple nodes using AI-driven selection.</p>
+                        <ul class="project__points">
+                            <li>Machine learning for data placement, dynamic replication, load balancing, and fault tolerance.</li>
+                            <li>Secure REST APIs, metadata management, and distributed storage with Python and Flask.</li>
+                        </ul>
+                        <p class="project__stack"><strong>Stack:</strong> Python, Flask, SQLite, Machine Learning, REST APIs, Git</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__head">
+                            <h3 class="project__title">AI Software Engineering Copilot</h3>
+                            <span class="badge badge--ongoing">Ongoing · 2026</span>
+                        </div>
+                        <p class="project__desc">AI-powered coding assistant that understands large software repositories using Retrieval-Augmented Generation.</p>
+                        <ul class="project__points">
+                            <li>Semantic code search and repository-aware code generation.</li>
+                            <li>Automated documentation, debugging assistance, and intelligent code review.</li>
+                        </ul>
+                        <p class="project__stack"><strong>Stack:</strong> Python, LangChain, Ollama, FAISS, ChromaDB, LLMs</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__head">
+                            <h3 class="project__title">Fully Local AI Voice Assistant</h3>
+                            <span class="badge">2026</span>
+                        </div>
+                        <p class="project__desc">Offline voice assistant integrating Faster-Whisper, Ollama, and Piper TTS — no cloud dependencies.</p>
+                        <ul class="project__points">
+                            <li>Modular speech-to-speech pipeline for fast local inference and natural voice interaction.</li>
+                        </ul>
+                        <p class="project__stack"><strong>Stack:</strong> Python, Faster-Whisper, Ollama, Piper TTS</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__head">
+                            <h3 class="project__title">Personal Finance Tracker</h3>
+                            <span class="badge">2025</span>
+                        </div>
+                        <p class="project__desc">Responsive full-stack finance management application with expense tracking, budgeting, and authentication.</p>
+                        <ul class="project__points">
+                            <li>Intuitive dashboard for monitoring personal financial activities.</li>
+                        </ul>
+                        <p class="project__stack"><strong>Stack:</strong> React.js, Node.js, Express.js</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Certifications & Achievements</h2>
+                <ul class="list">
+                    <li><strong>Building Agents with Agentic AI</strong> — IBM Career Education Program (IBM Developer Skills Network), July 2026</li>
+                    <li>Qualified for <strong>Level 3</strong> of the Flipkart GRID 8.0 Hackathon.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section__title">Get in Touch</h2>
+                <p class="contact__lead">I'm always open to interesting projects, internships, and collaborations.</p>
+                <div class="contact__actions">
+                    <a class="btn btn--primary" href="mailto:rohan.m0810@gmail.com">Email Me</a>
+                    <a class="btn btn--ghost" href="https://github.com/RohanMogalapalli" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Mogalapalli Rohan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
