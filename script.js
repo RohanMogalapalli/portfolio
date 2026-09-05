@@ -2,6 +2,32 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+// Dark mode — persisted, respects OS, syncs meta theme-color
+const themeToggle = document.getElementById('theme-toggle');
+const metaTheme = document.querySelector('meta[name="theme-color"]');
+
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    try { localStorage.setItem('rohan-theme', theme); } catch (e) {}
+    const dark = theme === 'dark';
+    if (themeToggle) {
+        themeToggle.setAttribute('aria-pressed', String(dark));
+        themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+    if (metaTheme) metaTheme.setAttribute('content', dark ? '#050505' : '#F1F2F4');
+}
+
+function currentTheme() {
+    return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+}
+
+if (themeToggle) {
+    applyTheme(currentTheme());
+    themeToggle.addEventListener('click', () => {
+        applyTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+    });
+}
+
 // Fluid Island nav — hamburger morph + massive overlay expansion
 const toggle = document.getElementById('nav-toggle');
 const overlay = document.getElementById('nav-overlay');
