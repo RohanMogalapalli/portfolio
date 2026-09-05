@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mogalapalli Rohan — Computer Science undergraduate at VIT building intelligent systems and full-stack applications.">
-    <meta name="theme-color" content="#fafafa">
-    <title>Mogalapalli Rohan — Portfolio</title>
+    <meta name="theme-color" content="#FCFDFD">
+    <title>Mogalapalli Rohan — Systems that run offline</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="web.css">
 </head>
 <body>
@@ -16,165 +16,173 @@
 
     <header class="site-header">
         <nav class="nav" aria-label="Primary">
-            <a href="#about" class="nav__logo" aria-label="Rohan — home">Rohan</a>
-            <ul class="nav__links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
+            <a href="#top" class="nav__logo" aria-label="Rohan — home"><span class="logo-dot" aria-hidden="true"></span>Mogalapalli Rohan</a>
+            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+            </button>
+            <ul class="nav__links" id="nav-menu">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#background">Background</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <span class="nav__status"><span class="pulse" aria-hidden="true"></span>Open to internships</span>
         </nav>
     </header>
 
     <main id="main">
-        <section id="about" class="hero">
-            <div class="container">
-                <p class="hero__eyebrow">Hello, I'm</p>
-                <h1 class="hero__title">Mogalapalli Rohan</h1>
-                <p class="hero__subtitle">Computer Science undergraduate at VIT, building intelligent systems and full-stack applications.</p>
-                <ul class="hero__meta" aria-label="Contact details">
-                    <li><a href="tel:+919392795372">+91 9392795372</a></li>
-                    <li aria-hidden="true" class="dot">·</li>
-                    <li><a href="mailto:rohan.m0810@gmail.com">rohan.m0810@gmail.com</a></li>
-                    <li aria-hidden="true" class="dot">·</li>
-                    <li><a href="https://github.com/RohanMogalapalli" target="_blank" rel="noopener noreferrer">github.com/RohanMogalapalli</a></li>
-                </ul>
-                <div class="hero__actions">
-                    <a href="#projects" class="btn btn--primary">View Projects</a>
-                    <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        <section class="hero" id="top">
+            <div class="container hero__grid">
+                <div class="hero__copy">
+                    <p class="hero__kicker">VIT Vellore · B.Tech CS, 2024–2028 · CGPA 9.41</p>
+                    <h1 class="hero__title">Systems that keep running when the wifi doesn&rsquo;t.</h1>
+                    <p class="hero__subtitle">I&rsquo;m Rohan. I build local-first AI and distributed storage — voice assistants with no cloud bill, code copilots that read whole repos, vaults that spread encrypted shards across nodes.</p>
+                    <div class="hero__actions">
+                        <a href="#work" class="btn btn--primary">See the work</a>
+                        <a href="mailto:rohan.m0810@gmail.com" class="btn btn--ghost">rohan.m0810@gmail.com</a>
+                    </div>
+                    <ul class="hero__contacts" aria-label="Contact details">
+                        <li><span>Phone</span><a href="tel:+919392795372">+91 93927 95372</a></li>
+                        <li><span>Code</span><a href="https://github.com/RohanMogalapalli" target="_blank" rel="noopener noreferrer">github.com/RohanMogalapalli</a></li>
+                        <li><span>Base</span>Vellore, India</li>
+                    </ul>
+                </div>
+                <div class="console" aria-label="Local inference pipeline demo">
+                    <div class="console__bar">
+                        <span class="console__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <span class="console__title">local-pipeline — no cloud</span>
+                        <span class="console__rec" aria-hidden="true">● live</span>
+                    </div>
+                    <ol class="console__stages">
+                        <li class="stage is-done">
+                            <div class="stage__row"><strong>mic</strong><em>captured 1.8s</em></div>
+                            <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                        </li>
+                        <li class="stage is-done">
+                            <div class="stage__row"><strong>faster-whisper</strong><em>transcribed locally · 0.4s</em></div>
+                            <code class="stage__code">“summarise vault shard 14”</code>
+                        </li>
+                        <li class="stage is-active">
+                            <div class="stage__row"><strong>ollama</strong><em id="typed-line" aria-live="polite">reasoning over repo…</em></div>
+                            <div class="meter" aria-hidden="true"><span></span></div>
+                        </li>
+                        <li class="stage">
+                            <div class="stage__row"><strong>piper-tts</strong><em>queued · offline</em></div>
+                        </li>
+                    </ol>
+                    <p class="console__foot">Same stack as the voice assistant below. Nothing leaves the machine.</p>
+                </div>
                 </div>
             </div>
         </section>
 
-        <section id="education" class="section">
+        <section id="work" class="section">
             <div class="container">
-                <h2 class="section__title">Education</h2>
-                <div class="card">
-                    <div class="card__head">
-                        <h3 class="card__title">Vellore Institute of Technology</h3>
-                        <span class="card__meta">2024 – 2028 · Vellore, India</span>
-                    </div>
-                    <p class="card__sub">Bachelor of Technology in Computer Science and Engineering</p>
-                    <p class="card__highlight">CGPA: 9.41 / 10</p>
-                    <p class="card__detail"><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Software Engineering, Artificial Intelligence, Machine Learning, Computer Organization & Architecture.</p>
+                <div class="section__head">
+                    <h2 class="section__title">Selected work</h2>
+                    <p class="section__note">Four builds. One thread: make intelligence cheap, local, and dependable.</p>
                 </div>
-            </div>
-        </section>
 
-        <section id="skills" class="section section--alt">
-            <div class="container">
-                <h2 class="section__title">Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Languages</h3>
-                        <p>Python, Java, C, C++, JavaScript, SQL</p>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Frontend</h3>
-                        <p>React.js, HTML5, CSS3</p>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Backend</h3>
-                        <p>Node.js, Express.js</p>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Databases</h3>
-                        <p>MongoDB, MySQL, SQLite</p>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">AI / ML</h3>
-                        <p>LangChain, Ollama, Faster-Whisper, RAG, LLMs, Prompt Engineering</p>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Tools</h3>
-                        <p>Git, GitHub, VS Code, Linux</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section__title">Projects</h2>
-                <div class="projects-grid">
-                    <article class="project">
-                        <div class="project__head">
-                            <h3 class="project__title">CloudVaultX</h3>
-                            <span class="badge badge--ongoing">Ongoing · 2026</span>
-                        </div>
-                        <p class="project__desc">Decentralized cloud storage platform that distributes encrypted files across multiple nodes using AI-driven selection.</p>
-                        <ul class="project__points">
-                            <li>Machine learning for data placement, dynamic replication, load balancing, and fault tolerance.</li>
-                            <li>Secure REST APIs, metadata management, and distributed storage with Python and Flask.</li>
+                <article class="feature">
+                    <div class="feature__main">
+                        <p class="feature__status"><span class="pulse" aria-hidden="true"></span>In progress · 2026 · flagship</p>
+                        <h3 class="feature__title">CloudVaultX</h3>
+                        <p class="feature__lede">Decentralised cloud storage that spreads encrypted files across nodes using AI-driven placement — with replication and failover decided by load, not luck.</p>
+                        <ul class="feature__points">
+                            <li>ML policy for placement, dynamic replication, and fault tolerance</li>
+                            <li>Secure REST APIs, metadata service, and distributed store in Flask</li>
                         </ul>
-                        <p class="project__stack"><strong>Stack:</strong> Python, Flask, SQLite, Machine Learning, REST APIs, Git</p>
+                        <code class="stack">Python · Flask · SQLite · ML · REST</code>
+                    </div>
+                    <div class="feature__diagram" aria-hidden="true">
+                        <div class="node-grid">
+                            <span>n1</span><span class="on">n2</span><span>n3</span>
+                            <span class="on">n4</span><span>n5</span><span class="on">n6</span>
+                            <span>n7</span><span>n8</span><span>n9</span>
+                        </div>
+                        <p>shard 14 → n2 · n4 · n6</p>
+                    </div>
+                </article>
+
+                <div class="dossiers-wrap">
+                <div class="dossiers">
+                    <article class="dossier">
+                        <p class="dossier__status">In progress · 2026</p>
+                        <h3>AI Software Engineering Copilot</h3>
+                        <p>Reads entire repos with RAG, then answers, generates, documents, and reviews with file-level context.</p>
+                        <code class="stack">LangChain · Ollama · FAISS · ChromaDB</code>
                     </article>
-
-                    <article class="project">
-                        <div class="project__head">
-                            <h3 class="project__title">AI Software Engineering Copilot</h3>
-                            <span class="badge badge--ongoing">Ongoing · 2026</span>
-                        </div>
-                        <p class="project__desc">AI-powered coding assistant that understands large software repositories using Retrieval-Augmented Generation.</p>
-                        <ul class="project__points">
-                            <li>Semantic code search and repository-aware code generation.</li>
-                            <li>Automated documentation, debugging assistance, and intelligent code review.</li>
-                        </ul>
-                        <p class="project__stack"><strong>Stack:</strong> Python, LangChain, Ollama, FAISS, ChromaDB, LLMs</p>
+                    <article class="dossier dossier--voice">
+                        <p class="dossier__status">Shipped · 2026</p>
+                        <h3>Fully Local Voice Assistant</h3>
+                        <p>Push-to-talk pipeline — Faster-Whisper in, Ollama reasoning, Piper voice out. Zero cloud calls.</p>
+                        <code class="stack">Faster-Whisper · Ollama · Piper TTS</code>
                     </article>
-
-                    <article class="project">
-                        <div class="project__head">
-                            <h3 class="project__title">Fully Local AI Voice Assistant</h3>
-                            <span class="badge">2026</span>
-                        </div>
-                        <p class="project__desc">Offline voice assistant integrating Faster-Whisper, Ollama, and Piper TTS — no cloud dependencies.</p>
-                        <ul class="project__points">
-                            <li>Modular speech-to-speech pipeline for fast local inference and natural voice interaction.</li>
-                        </ul>
-                        <p class="project__stack"><strong>Stack:</strong> Python, Faster-Whisper, Ollama, Piper TTS</p>
-                    </article>
-
-                    <article class="project">
-                        <div class="project__head">
-                            <h3 class="project__title">Personal Finance Tracker</h3>
-                            <span class="badge">2025</span>
-                        </div>
-                        <p class="project__desc">Responsive full-stack finance management application with expense tracking, budgeting, and authentication.</p>
-                        <ul class="project__points">
-                            <li>Intuitive dashboard for monitoring personal financial activities.</li>
-                        </ul>
-                        <p class="project__stack"><strong>Stack:</strong> React.js, Node.js, Express.js</p>
+                    <article class="dossier dossier--wide">
+                        <p class="dossier__status">Shipped · 2025</p>
+                        <h3>Personal Finance Tracker</h3>
+                        <p>Full-stack ledger with auth, budgets, and a dashboard people actually open — built with React, Node, and Express.</p>
+                        <code class="stack">React · Node · Express</code>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="achievements" class="section section--alt">
-            <div class="container">
-                <h2 class="section__title">Certifications & Achievements</h2>
-                <ul class="list">
-                    <li><strong>Building Agents with Agentic AI</strong> — IBM Career Education Program (IBM Developer Skills Network), July 2026</li>
-                    <li>Qualified for <strong>Level 3</strong> of the Flipkart GRID 8.0 Hackathon.</li>
-                </ul>
+        <section id="background" class="section section--wash">
+            <div class="container background-grid">
+                <div>
+                    <h2 class="section__title">Background</h2>
+                    <div class="ledger">
+                        <div class="ledger__row">
+                            <div>
+                                <h3>Vellore Institute of Technology</h3>
+                                <p>B.Tech, Computer Science and Engineering · Vellore</p>
+                            </div>
+                            <p class="ledger__side">2024–2028<br><strong>9.41 / 10</strong></p>
+                        </div>
+                        <p class="ledger__courses">Data Structures &amp; Algorithms · OOP · DBMS · Operating Systems · Networks · Software Engineering · AI · ML · Computer Organisation</p>
+                    </div>
+                    <h3 class="mini-title">Certifications and achievements</h3>
+                    <ul class="plain-list">
+                        <li><strong>Building Agents with Agentic AI</strong> — IBM Career Education Program, July 2026</li>
+                        <li>Qualified for <strong>Level 3</strong> of the Flipkart GRID 8.0 Hackathon</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="section__title">Toolkit</h2>
+                    <dl class="toolkit">
+                        <div><dt>Languages</dt><dd>Python, Java, C, C++, JavaScript, SQL</dd></div>
+                        <div><dt>Frontend</dt><dd>React, HTML, CSS</dd></div>
+                        <div><dt>Backend</dt><dd>Node.js, Express</dd></div>
+                        <div><dt>Data</dt><dd>MongoDB, MySQL, SQLite</dd></div>
+                        <div><dt>AI / ML</dt><dd>LangChain, Ollama, Faster-Whisper, RAG, LLMs, Prompt Engineering</dd></div>
+                        <div><dt>Tools</dt><dd>Git, GitHub, VS Code, Linux</dd></div>
+                    </dl>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section__title">Get in Touch</h2>
-                <p class="contact__lead">I'm always open to interesting projects, internships, and collaborations.</p>
-                <div class="contact__actions">
-                    <a class="btn btn--primary" href="mailto:rohan.m0810@gmail.com">Email Me</a>
-                    <a class="btn btn--ghost" href="https://github.com/RohanMogalapalli" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <section id="contact" class="section contact">
+            <div class="container contact__grid">
+                <div>
+                    <h2 class="contact__title">Have a hard systems problem? I&rsquo;ll take it.</h2>
+                    <p class="contact__lede">Currently looking for internships and collaborations around applied AI, backend systems, and developer tools.</p>
+                </div>
+                <div class="contact__panel">
+                    <a class="contact__big" href="mailto:rohan.m0810@gmail.com">rohan.m0810@gmail.com</a>
+                    <div class="contact__actions">
+                        <a class="btn btn--primary" href="mailto:rohan.m0810@gmail.com">Email me</a>
+                        <a class="btn btn--ghost" href="https://github.com/RohanMogalapalli" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="btn btn--ghost" href="tel:+919392795372">Call</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <p>© <span id="year"></span> Mogalapalli Rohan.</p>
+        <div class="container footer__row">
+            <p>© <span id="year"></span> Mogalapalli Rohan · Built by hand, no template.</p>
+            <p class="footer__side">Vellore · 13.08° N</p>
         </div>
     </footer>
 
